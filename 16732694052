@@ -72,7 +72,7 @@ local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 
 local Window = Library:CreateWindow({
-    Title = "CloudHub | discord.gg/wgFBpD7mRh JOIN DISCORD",
+    Title = "Hidaki Hub | fxyhidaki",
     Center = true,
     AutoShow = true,
     TabPadding = 8,
