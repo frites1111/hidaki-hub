@@ -344,7 +344,7 @@ end)
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/cloudman4416/CloudLib/refs/heads/main/Orion.lua')))()
 
-local Window = OrionLib:MakeWindow({Name = "Hidaki Hub | fxyhidaki", HidePremium = false, SaveConfig = false, ConfigFolder = "CloudHub "})
+local Window = OrionLib:MakeWindow({Name = "Hidaki Hub | fxyhidaki", HidePremium = false, SaveConfig = false, ConfigFolder = "HidakiHub "})
 
 local AutoFarm = Window:MakeTab({
     Name = "AutoFarm",
