@@ -538,7 +538,7 @@ arrowgb:AddToggle({
                     [1] = "skil_ting_asd",
                     [2] = player,
                     [3] = "arrow_knock_back",
-                    [4] = 5
+                    [4] = 6
                 }
 
                 game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
@@ -576,7 +576,7 @@ arrowgb:AddToggle({
                 [1] = "skil_ting_asd",
                 [2] = player,
                 [3] = "arrow_knock_back",
-                [4] = 5
+                [4] = 6
             }
             game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
             task.wait(6)
@@ -655,7 +655,7 @@ arrowgb:AddButton({
                     [1] = "skil_ting_asd",
                     [2] = player,
                     [3] = "arrow_knock_back",
-                    [4] = 5
+                    [4] = 6
                 }
 
                 game:GetService("ReplicatedStorage").Remotes.To_Server.Handle_Initiate_S_:InvokeServer(unpack(args))
