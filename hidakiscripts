@@ -7,28 +7,21 @@ local mapScripts = {
     ["map2public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map2PC"
 }
 
--- Function to detect the current map
-local function getCurrentMap()
-    for _, v in pairs(game.Workspace:GetChildren()) do
-        if mapScripts[v.Name] then
-            return v.Name
-        end
-    end
-    return nil
-end
+-- Get the current map's PlaceId
+local currentPlaceId = game.PlaceId
 
--- Load the correct script
-local currentMap = getCurrentMap()
-if currentMap and mapScripts[currentMap] then
+-- Check if the PlaceId matches any of the known map scripts
+if mapScripts[currentPlaceId] then
+    print("Loading script for PlaceId: " .. currentPlaceId)  -- Debugging: Show the PlaceId being loaded
     local success, result = pcall(function()
-        return game:HttpGet(mapScripts[currentMap] .. "?v=" .. tostring(math.random(1000, 9999)), true)
+        return game:HttpGet(mapScripts[currentPlaceId] .. "?v=" .. tostring(math.random(1000, 9999)), true)
     end)
 
     if success and result then
         loadstring(result)()
     else
-        warn("Failed to load script for: " .. currentMap)
+        warn("Failed to load script for PlaceId: " .. currentPlaceId)
     end
 else
-    warn("No script found for this map!")
+    warn("No script found for this PlaceId!")
 end
