@@ -1,10 +1,10 @@
 local mapScripts = {
-    ["mugen"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/11468034852",
-    ["ouwighara"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/11468075017",
-    ["map2priv"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/13883059853",
-    ["map1private"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/13883279773",
-    ["map1public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/17387475546",
-    ["map2public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/17387482786"
+    ["mugen"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/Mugen%20Train",
+    ["ouwighara"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/Dungeon",
+    ["map2priv"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/Map%202%20PS",
+    ["map1private"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/Map%201%20PS",
+    ["map1public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/Map%201%20PC",
+    ["map2public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/Map%202%20PC"
 }
 
 -- Function to detect the current map
