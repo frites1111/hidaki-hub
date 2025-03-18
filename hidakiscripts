@@ -1,5 +1,5 @@
 local mapScripts = {
-    ["mugen"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Mugen",
+    ["mugen"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/MugenTrain",
     ["ouwighara"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Dungeon",
     ["map2priv"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map2PS",
     ["map1private"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map1PS",
@@ -20,7 +20,15 @@ end
 -- Load the correct script
 local currentMap = getCurrentMap()
 if currentMap and mapScripts[currentMap] then
-    loadstring(game:HttpGet(mapScripts[currentMap]))() -- ✅ This will now work correctly
+    local success, result = pcall(function()
+        return game:HttpGet(mapScripts[currentMap] .. "?v=" .. tostring(math.random(1000, 9999)), true)
+    end)
+
+    if success and result then
+        loadstring(result)()
+    else
+        warn("Failed to load script for: " .. currentMap)
+    end
 else
     warn("No script found for this map!")
 end
