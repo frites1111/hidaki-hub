@@ -1,0 +1,26 @@
+local mapScripts = {
+    ["mugen"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/11468034852",
+    ["ouwighara"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/11468075017",
+    ["map2priv"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/13883059853",
+    ["map1private"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/13883279773",
+    ["map1public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/17387475546",
+    ["map2public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/refs/heads/main/17387482786"
+}
+
+-- Function to detect the current map
+local function getCurrentMap()
+    for _, v in pairs(game.Workspace:GetChildren()) do
+        if mapScripts[v.Name] then
+            return v.Name
+        end
+    end
+    return nil
+end
+
+-- Load the correct script
+local currentMap = getCurrentMap()
+if currentMap and mapScripts[currentMap] then
+    loadstring(game:HttpGet(mapScripts[currentMap]))() -- ✅ This will now work correctly
+else
+    warn("No script found for this map!")
+end
