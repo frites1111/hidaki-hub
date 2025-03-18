@@ -1,10 +1,10 @@
 local mapScripts = {
-    ["mugen"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Mugen_Train",
+    ["mugen"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Mugen",
     ["ouwighara"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Dungeon",
-    ["map2priv"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map_2_PS",
-    ["map1private"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map_1_PS",
-    ["map1public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map_1_PC",
-    ["map2public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map_2_PC"
+    ["map2priv"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map2PS",
+    ["map1private"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map1PS",
+    ["map1public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map1PC",
+    ["map2public"] = "https://raw.githubusercontent.com/frites1111/hidaki-hub/main/Map2PC"
 }
 
 -- Function to detect the current map
